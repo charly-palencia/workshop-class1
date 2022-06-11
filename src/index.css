@@ -3,6 +3,7 @@
 	--primary-color: #e50914;
 	--dark-color: #141414;
 	--light-color: #f4f4f4;
+	--white: #EBECEC;
 }
 
 * {
@@ -12,10 +13,10 @@
 }
 
 body {
-	font-family: 'Arial', sans-serif;
-	-webkit-font-smoothing: antialiased;
-	background: #000;
-	color: #999;
+	background: #141414;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	color: #6D6D6D;
 }
 
 h1,
@@ -23,6 +24,14 @@ h2,
 h3,
 h4 {
 	color: #fff;
+}
+
+h1 {
+	font-family: 'Helvetica 45 Light', sans-serif;
+	font-size: 50px;
+	font-weight: 300;
+	color: #fff;
+	margin-bottom: 10px;
 }
 
 a {
@@ -34,10 +43,71 @@ p {
 	margin: 0.5rem 0;
 }
 
-/* Container */
+/* App Component */
+
 .container {
 	max-width: 70%;
 	margin: auto;
 	overflow: hidden;
 	padding: 0 2rem;
+}
+
+.logo {
+	width: 110px; height:30px;
+	margin: 40px 60px;
+	background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2000px-Netflix_2015_logo.svg.png');
+	background-size: cover;
+}
+
+.wrapper {
+	margin: 100px 0;
+	text-align: center;
+}
+
+/* Profile Component */
+
+.profile-wrap {
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	max-width: 800px;
+	margin: 0px auto;
+}
+
+.profile {
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	max-width: 800px;
+	margin: 50px auto;
+	width: 150px;
+}
+
+.profile > div {
+	width: 150px; height:150px;
+	border: 6px solid #1f1f1f;
+	transition: all 300ms ease;
+}
+
+.profile > div img {
+	width: 100%;
+}
+
+.profile > p {
+	margin: 20px 0;
+	line-height: 1.25em;
+	transition: all 300ms ease;
+}
+
+.profile:hover > div {
+	border: 6px solid var(--white);
+}
+.profile:hover > p {
+	color: var(--white);
+}
+
+/* Search Component */
+input[type="text"]{
+	padding: 8px;
+	width: 30%;
 }
