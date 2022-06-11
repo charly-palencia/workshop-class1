@@ -1,13 +1,8 @@
+import Item from "./Item";
+
 const List = ({items}) => (
   <div className="profile-wrap">
-    {items.map(({image, id, name}) => (
-      <div key={id} className="profile">
-        <div>
-          <img src={image} alt="" />
-        </div>
-        <p>{name}</p>
-      </div>
-    ))}
+    {items.map((profile) => <Item key={profile.id} profile={profile}/>)}
   </div>
 );
 

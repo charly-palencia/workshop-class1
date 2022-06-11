@@ -3,17 +3,6 @@ import './App.css';
 import List from './List';
 import Search from './Search';
 
-const profiles = [{
-  id: 1,
-  image: "https://i.pinimg.com/474x/55/ba/30/55ba30e8f83d0064ee7669dc203ad1d5.jpg",
-  name: "Pays For Account Never Watches"
-},
-{
-  id: 2,
-  image: "https://ih0.redbubble.net/image.618379802.1473/flat,1000x1000,075,f.u2.jpg",
-  name: "Ex Still Has Your Password"
-}];
-
 function App() {
   /*
    * NEW TOPICS
@@ -33,6 +22,18 @@ function App() {
   const handleChange = ({target: {value}}) => {
     setSearchTerm(value);
   };
+
+
+  const profiles = [{
+    id: 1,
+    image: "https://i.pinimg.com/474x/55/ba/30/55ba30e8f83d0064ee7669dc203ad1d5.jpg",
+    name: "Pays For Account Never Watches"
+  },
+  {
+    id: 2,
+    image: "https://ih0.redbubble.net/image.618379802.1473/flat,1000x1000,075,f.u2.jpg",
+    name: "Ex Still Has Your Password"
+  }];
 
   /*
    * NEW TOPICS
